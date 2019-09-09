@@ -14,8 +14,8 @@ LD_LIBRARY_PATH=/usr/local/lib; export LD_LIBRARY_PATH
 #
 # Amazon
 PATH=$PATH:$HOME/Library/Python/3.7/bin;export PATH
-#AWS_ACCESS_KEY_ID="AKIAIJGNVWYXQHSEVRWA"; export AWS_ACCESS_KEY_ID
-#AWS_SECRET_ACCESS_KEY="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"; export AWS_SECRET_ACCESS_KEY
+#AWS_ACCESS_KEY_ID="bogus"; export AWS_ACCESS_KEY_ID
+#AWS_SECRET_ACCESS_KEY="bogus"; export AWS_SECRET_ACCESS_KEY
 #
 alias ls='ls -FC'
 alias ll='ls -la'
