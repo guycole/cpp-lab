@@ -1,7 +1,9 @@
 # cpp-lab
 development enviroment in docker
 #
-  122  docker build . -t xx1
-  124  docker run --rm -it xx1 /bin/bash
- docker run --rm -it -v ~/IdeaProjects:/home/gsc/IdeaProjects  xx1 /bin/bash
-
+docker build . -t cppdev
+#
+docker run --rm -it -v ~/IdeaProjects:/home/gsc/IdeaProjects cppdev /bin/bash
+#
+docker run --rm -it -v ~/work:/home/work cppdev /bin/bash
+#
