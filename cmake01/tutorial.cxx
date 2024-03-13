@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 
+#include "MathFunctions.h"
+
 // TODO 11: Include TutorialConfig.h
 #include "TutorialConfig.h"
 
@@ -21,8 +23,12 @@ int main(int argc, char* argv[])
   // const double inputValue = atof(argv[1]);
   const double inputValue = std::stod(argv[1]);
 
-  // calculate square root
-  const double outputValue = sqrt(inputValue);
+  // calculateow/hide answer
+
+  //Since the configured file will be written into the project binary directory, we must add that directory to the list of paths to search for include files. square root
+  //const double outputValue = sqrt(inputValue);
+  const double outputValue = mathfunctions::sqrt(inputValue);
+  
   std::cout << "The square root of " << inputValue << " is " << outputValue
             << std::endl;
   return 0;
