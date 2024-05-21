@@ -8,7 +8,7 @@ char** fizzBuzz(size_t n, size_t* returnSize) {
     char buffer[32];
 
     for (size_t ndx = 1; ndx <= n; ndx++) {
-        printf("-x->%zu\n", ndx);
+        //printf("-x->%zu\n", ndx);
         if ((ndx % 3 == 0) && (ndx % 5 == 0)) {
             results[ndx-1] = strdup("FizzBuzz");
         } else if (ndx % 5 == 0) {
@@ -32,11 +32,11 @@ int main() {
 
     char **results = fizzBuzz(n, &returnSize);
 
-    printf("%zu\n", returnSize);
+    //printf("%zu\n", returnSize);
     
     for (size_t ndx = 0; ndx < n; ndx++) {
         printf("%s\n", results[ndx]);
     }
     
-    return 0;
+    return EXIT_SUCCESS;
 }
